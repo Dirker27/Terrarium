@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/view_terrarium"
+                android:layout_width="300dp"
+                android:layout_height="200dp" >
+
+    <ImageView
+        android:id="@+id/component_dirt"
+        android:layout_height="20dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:src="@drawable/dirt_base" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="4dp">
+
+        <include layout="@layout/grass_patch" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/component_fishbowl"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/fishbowl" />
+
+</RelativeLayout>
