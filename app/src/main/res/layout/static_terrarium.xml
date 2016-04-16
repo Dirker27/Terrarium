@@ -6,18 +6,18 @@
 
     <ImageView
         android:id="@+id/component_dirt"
-        android:layout_height="20dp"
+        android:layout_height="50dp"
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_margin="3dp"
         android:src="@drawable/dirt_base" />
 
     <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/component_lawn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:layout_alignParentLeft="true"
-        android:layout_margin="4dp">
+        android:layout_alignParentBottom="true">
 
         <include layout="@layout/grass_patch" />
 
